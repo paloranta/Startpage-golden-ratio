@@ -4,6 +4,8 @@
 [screenshot]: https://github.com/paloranta/Startpage-golden-ratio/blob/master/screenshot.png "Screenshot"
 
 For a live view, check: https://5zwvko5z5x.codesandbox.io/
+or https://paloranta.github.io/Startpage-golden-ratio-demo/
+
 A startpage using local storage to store user notes and tasks. Has also a random-quote display changing every minute and a calculator.
 
 This was a hobby-project with the aim of producing something useful while learning Vue.js, CSS grid and related stuff.
