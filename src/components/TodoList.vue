@@ -24,7 +24,7 @@
 import BaseInputText from "./BaseInputText.vue";
 import TodoListItem from "./TodoListItem.vue";
 
-let nextTodoId = '';
+let nextTodoId = 1;
 
 export default {
   components: {
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       newTodoText: "",
-      todos: [         
+      todos: [       
       ],
     };
   },
@@ -62,11 +62,16 @@ export default {
     },
   },
 
-  mounted() {    
+  mounted() {       
+    nextTodoId++;   
     if (localStorage.getItem('todos')) 
       this.todos = JSON.parse(localStorage.getItem('todos'));
       let maxId = Math.max.apply(Math, this.todos.map(function(o){ return o.id }));
-      nextTodoId = maxId + 1;
+      console.log('MaxId:' + maxId);
+      nextTodoId = maxId++;
+      console.log('nextTodoId:' + nextTodoId);      
+      if (maxId === -Infinity)
+        nextTodoId = 1;
   },
 
   watch: {
