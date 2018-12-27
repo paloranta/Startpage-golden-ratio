@@ -16,7 +16,7 @@ $hoverblue: #48AFF0;
   color: #2c3e50;
   margin-top: 60px;
 }
-$width: 100%;
+$width: 85vw;
 $height: $width / 1.618;
 $border: 0.5px solid #4a4949;
 
@@ -31,6 +31,13 @@ body {
   font-family: Monospace, Courier;
   font-size: 1em;
   text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+}
+
+tbody tr td:first-child {
+  width: 95%;
+  min-width: 95%;
+  max-width: 95%;
+  word-break: break-all;
 }
 
 .quote {  
@@ -232,7 +239,7 @@ input[type="text"], textarea {
 }
 
 .calculator {
-  margin: 0 auto;  
+  margin-top: .2em;  
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -277,16 +284,18 @@ input[type="text"], textarea {
 .operator2:hover { background-color: $hoverblue; cursor: pointer; }
 .input {
   width: 70%;
-  padding: .5vw;
-  border-radius: .5em;
-  border: 1px solid #32485F;
-  color: #fff;
-  font-family: Monospace, Courier;  
-  font-size: 1em;
+    padding: .2em;
+    border-radius: 4px;
+    border: 1px solid #32485F;
+    color: #fff;
+    font-family: Monospace, Courier;
+    font-size: 1em;
+    margin: .2em;
 }
 tr.spaceUnder>td {
   padding-bottom: .5em;
 }
+ 
 .notes-item {
   display: inline-block;
   margin-right: 10px;
