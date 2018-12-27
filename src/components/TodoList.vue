@@ -14,8 +14,7 @@
           :key="todo.id"
           :todo="todo"
           @remove="removeTodo"
-        />      
-        </transition-group>
+        />              
     </tbody>    
     <p v-else>Nothing to do, input a task or a note and press Enter</p>
   </div>
@@ -25,7 +24,7 @@
 import BaseInputText from "./BaseInputText.vue";
 import TodoListItem from "./TodoListItem.vue";
 
-let nextTodoId = 4;
+let nextTodoId = '';
 
 export default {
   components: {
@@ -35,10 +34,7 @@ export default {
   data() {
     return {
       newTodoText: "",
-      todos: [ 
-        {id: 1, text: "Do something", time: "18:00:00", date: "01.12.2018"},       
-        {id: 2, text: "Use this as a scratchpad", time: "18:00:00", date: "01.12.2018"},
-        {id: 3, text: "The app uses browsers storage, so whatever you input here, stays if you refresh the page", time: "18:00:00", date: "01.12.2018"}   
+      todos: [         
       ],
     };
   },
@@ -69,7 +65,8 @@ export default {
   mounted() {    
     if (localStorage.getItem('todos')) 
       this.todos = JSON.parse(localStorage.getItem('todos'));
-      nextTodoId = this.todos.length + 1;
+      let maxId = Math.max.apply(Math, this.todos.map(function(o){ return o.id }));
+      nextTodoId = maxId + 1;
   },
 
   watch: {
