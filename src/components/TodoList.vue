@@ -8,14 +8,14 @@
       placeholder="Input a task or a note and press enter"
       @keydown.enter="addTodo"
     />    
-    <tbody v-if="todos.length"> 
-        <br />       
+    <tbody v-if="todos.length" is="transition-group" name="notes"> 
         <TodoListItem
           v-for="todo in todos"
           :key="todo.id"
           :todo="todo"
           @remove="removeTodo"
         />      
+        </transition-group>
     </tbody>    
     <p v-else>Nothing to do, input a task or a note and press Enter</p>
   </div>
