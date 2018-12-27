@@ -42,10 +42,11 @@ tbody tr td:first-child {
 .quote {  
   margin: 2em;
   border-left: 4px solid rgba(167,182,194,.5);
-  padding: 0 20px;
+  padding: 0 20px;  
 }
 
 .clock {  
+  font-family: Roboto, Monospace, sans-serif;
   margin: 1em;  
   text-align: center;
 }
@@ -72,7 +73,7 @@ tbody tr td:first-child {
 .button:hover {
     -webkit-box-shadow: 0 0 0 1px rgba(16,22,26,.4);
     box-shadow: 0 0 0 1px rgba(16,22,26,.4);
-    background-color: #30404d;        
+    background-color: #30404d;    
 }
 
 input[type="text"], textarea {
