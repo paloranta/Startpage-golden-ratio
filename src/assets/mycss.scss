@@ -287,3 +287,17 @@ input[type="text"], textarea {
 tr.spaceUnder>td {
   padding-bottom: .5em;
 }
+.notes-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.notes-enter-active, .notes-leave-active {
+  transition: all .3s;
+}
+.notes-leave-to {
+  background-color: tomato;
+}
+.notes-enter, .notes-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
