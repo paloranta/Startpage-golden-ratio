@@ -124,10 +124,12 @@ input[type="text"], textarea {
     &.b {
       grid-area: B;
       background-color: $lightgray;
+      transform: rotate(2.5deg);
     }
     &.c {
       grid-area: C;
       background-color: $gray;
+      transform: rotate(-5deg);
     }
     &.d {
       grid-area: D;
@@ -204,14 +206,12 @@ input[type="text"], textarea {
   &.b {
     grid-area: B;
     background-color: $lightgray;
-    box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 2px 4px rgba(16,22,26,.2), 0 8px 24px rgba(0,0,0,.3);    
-    transform: rotate(2.5deg);
+    box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 2px 4px rgba(16,22,26,.2), 0 8px 24px rgba(0,0,0,.3);        
   }
   &.c {
     grid-area: C;
     background-color: $gray;
-    box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 2px 4px rgba(16,22,26,.2), 0 8px 24px rgba(0,0,0,.3);
-    transform: rotate(-5deg);
+    box-shadow: 0 0 0 1px rgba(16,22,26,.1), 0 2px 4px rgba(16,22,26,.2), 0 8px 24px rgba(0,0,0,.3);    
     z-index: -1;
   }
   &.d {
