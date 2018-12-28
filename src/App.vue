@@ -3,7 +3,7 @@
     <div class="item a"><TodoList /></div>
     <div class="item b"><RandomQuote /></div>
     <div class="item c"><Clock /></div>
-    <div class="item d"><Calculator /></div>
+    <div class="item d"><Calculator /></div>    
   </div>
 </template>
 
