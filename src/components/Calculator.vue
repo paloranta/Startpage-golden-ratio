@@ -123,7 +123,7 @@ export default {
     </div>
     <br />
     <div>
-        <input type="text" class="input" style="padding-top: .5em; width: 90%;"
+        <input type="text" class="input"
           v-on:keyup.96="append('0')"           
           v-on:keyup.97="append('1')" 
           v-on:keyup.98="append('2')" 
