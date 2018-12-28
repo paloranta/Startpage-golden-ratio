@@ -30,9 +30,9 @@ export default {
       }
       */
       this.minute = myDate.getMinutes();
-      /*if (this.minute < 10) {
+      if (this.minute < 10) {
         this.minute = "0" + this.minute;
-      }*/
+      }
       this.second = time.split(":")[2].split(" ")[0];
       this.amPm = time.split(" ")[1];
     }
