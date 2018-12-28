@@ -68,7 +68,7 @@ export default {
       this.todos = JSON.parse(localStorage.getItem('todos'));
       let maxId = Math.max.apply(Math, this.todos.map(function(o){ return o.id }));
       console.log('MaxId:' + maxId);
-      nextTodoId = maxId++;
+      nextTodoId = maxId+1;
       console.log('nextTodoId:' + nextTodoId);      
       if (maxId === -Infinity)
         nextTodoId = 1;
