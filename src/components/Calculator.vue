@@ -4,7 +4,7 @@ export default {
   data(){
     return {
       calculator: {
-        previous: null,
+        previous: 0,
         current: '',
         operator: null,
         operatorClicked: false,
@@ -16,6 +16,7 @@ export default {
   methods: {
     clearAll() {
       this.calculator.current = ''
+      this.reset()
     },
     sign() {
       if(this.calculator.current != '')
@@ -71,7 +72,8 @@ export default {
       )
       this.calculator.previous = null
       this.calculator.sign = ''
-      this.calculator.end = true
+      this.calculator.end = true 
+      this.reset()     
     },
     del() {
       if(this.calculator.current)
@@ -87,6 +89,9 @@ export default {
     inverse() {
       if(parseFloat(this.calculator.current) > 0)
         this.calculator.current = 1 / parseFloat(this.calculator.current)
+    },
+    reset() {
+      this.calc = ""
     }
   }
 }
@@ -123,7 +128,7 @@ export default {
     </div>
     <br />
     <div>
-        <input type="text" class="input"
+        <input type="text" v-model="calc" class="input"
           v-on:keyup.96="append('0')"           
           v-on:keyup.97="append('1')" 
           v-on:keyup.98="append('2')" 
@@ -140,7 +145,7 @@ export default {
           v-on:keyup.111="divide" 
           v-on:keyup.191="divide"       
           v-on:keyup.enter="equal"           
-          placeholder="Input a calculation" />
+          placeholder="Numpad entry" />
     </div>    
   </div>
 </template>

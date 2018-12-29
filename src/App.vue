@@ -1,6 +1,6 @@
 <template>
 <div class="outer">  
-  <span class="formula" style="left: 6%;top: 25%;">a</span><!--
+  <span class="formula" style="margin-left: -1.5em;top: 25%;">a</span><!--
   --><span class="formula" style="left: 15%;top: 0;">a</span><!--
   --><span class="formula" style="right: 20%;top: 0;z-index: 2;">b</span>
   <div class="container">    
