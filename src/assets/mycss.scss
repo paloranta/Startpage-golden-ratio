@@ -13,8 +13,8 @@ $hoverblue: #48AFF0;
   color: #2c3e50;
   margin-top: 60px;
 }
-$height: 100%;
-$width: $height * 1.618;
+$width: 85vw;
+$height: $width / 1.618;
 $border: 0.5px solid #4a4949;
 
 html {
