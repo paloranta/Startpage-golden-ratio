@@ -166,11 +166,6 @@ export default {
         },
         {
           text:
-            "“And I’m going to swap you for a dog, sweetheart, and sell the dog.",
-          author: "Robert Heinlein"
-        },
-        {
-          text:
             "How much is “too much”? Whatever you can’t spend before you leave a place you are not coming back to. If you hang onto that excess and come back later, you will usually find—invariably, so far as I recall—that inflation or war or taxes or changes in government or something has wiped out the alleged value of fiat money you may have kept.",
           author: "Robert Heinlein"
         },
@@ -304,6 +299,10 @@ export default {
           text:
             "I have always thought respectable people scoundrels and I look anxiously at my face every morning for signs of my becoming a scoundrel.",
           author: "Bertrand Russell"
+        },
+        {
+          text:"When action grows unprofitable, gather information; when information grows unprofitable, sleep.",
+          author:"Ursula K. Le Guin, The Left Hand of Darkness"
         }
       ]
     };
