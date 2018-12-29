@@ -145,6 +145,7 @@ export default {
           v-on:keyup.111="divide" 
           v-on:keyup.191="divide"       
           v-on:keyup.enter="equal"           
+          v-on:keyup.8="del"           
           placeholder="Numpad entry" />
     </div>    
   </div>
