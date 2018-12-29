@@ -1,9 +1,8 @@
 //https://codesandbox.io/s/o29j95wx9 "Simple Todo App with Vue"
 
 <template>
-  <div class="todoList">
-    <h1>
-      <span style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
+  <div class="todoList">    
+    <h1><span style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 2px 2px 2px;">o</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 3px 3px 3px;">t</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 4px 4px 4px;">e</span><!--
