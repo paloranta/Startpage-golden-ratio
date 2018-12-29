@@ -37,6 +37,7 @@ tbody tr td:first-child {
   width: 95%;
   min-width: 95%;
   max-width: 95%;  
+  word-break: break-word;
 }
 .formula {
   display: none;
@@ -66,8 +67,8 @@ tbody tr td:first-child {
   cursor: pointer;
   padding: 5px 10px;
   vertical-align: middle;    
-  min-width: 30px;
-  min-height: 30px;
+  min-width: 1.1em;
+  min-height: 1.1em;
 }
 
 .button:hover {
@@ -298,7 +299,6 @@ input[type="text"], textarea {
 tr.spaceUnder>td {
   padding-bottom: .5em;
 }
-
 .notes-enter-active, .notes-leave-active {
   transition: all .3s;
 }
@@ -312,7 +312,6 @@ tr.spaceUnder>td {
   opacity: 0;
   transform: translateY(-30px);
 }
-
 .component-fade-enter-active, .component-fade-leave-active {
   transition: opacity .3s ease;
 }

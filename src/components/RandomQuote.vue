@@ -254,7 +254,7 @@ export default {
         },
         {
           text:
-            "There are two statements about human beings that are true:  That all arealike, and that all are different.",
+            "There are two statements about human beings that are true:  That all are alike, and that all are different.",
           author: "Mark Van Doren"
         },
         {
