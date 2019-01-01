@@ -50,7 +50,7 @@ tbody tr td:first-child {
 .quote {  
   margin: 2em;
   border-left: 4px solid rgba(167,182,194,.5);
-  padding: 0 20px;  
+  padding: 0 20px;    
 }
 
 .clock {  
@@ -98,7 +98,8 @@ input[type="text"], textarea {
     height: $height;    
     display: grid;
     border: 1px solid #10161a;
-
+    -webkit-box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
     grid-template-columns: 61.8% 9.02% 5.58% 23.6%;
     grid-template-rows: 61.8% 9.02% 5.58% 23.6%;
     /*grid-template-areas:
@@ -106,6 +107,8 @@ input[type="text"], textarea {
       "A D D C"
       "A D D C"
       "A D D C";*/
+    background-color: #30404d;
+    background-image: url(./assets/old-mathematics.png); /* Background pattern from Toptal Subtle Patterns */
     grid-template-areas: 
     "A B B B"
     "A E F C"
@@ -131,7 +134,7 @@ input[type="text"], textarea {
     &.a {
       align-items: baseline;
       grid-area: A;
-      background-color: $lightestgray;      
+      //background-color: $lightestgray;      
       border-right: none;      
       border-bottom: none;
       border-top-left-radius: 100%;
@@ -194,6 +197,8 @@ input[type="text"], textarea {
   .note-wrapper {
     overflow: auto;
     max-height: $note-height;
+    -webkit-box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 2px 4px rgba(16, 22, 26, 0.2), 0 8px 24px rgba(0, 0, 0, 0.3);    
   }
 }
 
@@ -223,7 +228,7 @@ input[type="text"], textarea {
 
   &.a {    
     grid-area: A;
-    background-color: $lightestgray;
+    //background-color: $lightestgray;
   }
   &.b {
     grid-area: B;
