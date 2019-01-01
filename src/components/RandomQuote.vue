@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div  class="quote">
+      <div class="quote darken">
         <transition name="component-fade" mode="out-in">
           <span :key="selectedQuote">
               {{ selectedQuote }} 

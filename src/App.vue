@@ -8,6 +8,9 @@
     <div class="item b"><RandomQuote /></div>    
     <div class="item c"><Clock /></div>
     <div class="item d"><Calculator /></div>    
+    <div class="item e"></div>    
+    <div class="item f"></div>    
+    <div class="item g"></div>    
   </div>  
   <span>Golden ratio: a+b/a = a/b = φ ≈ 1,61803</span>
 </div>  

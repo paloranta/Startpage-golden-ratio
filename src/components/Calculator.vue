@@ -98,7 +98,7 @@ export default {
 </script>
 
 <template>
-  <div>
+  <div>    
     <div class="calculator">
       <div class="prev">{{ calculator.previous || '' }} {{ calculator.sign }}</div>
       <div class="display">{{ calculator.current || '0' }}</div>
@@ -124,11 +124,9 @@ export default {
       <div @click="sign" class="btn">±</div>
       <div @click="append('0')" class="btn">0</div>
       <div @click="dot" class="btn">.</div>
-      <div @click="equal" class="btn operator2">=</div>
-    </div>
-    <br />
-    <div>
-        <input type="text" v-model="calc" class="input"
+      <div @click="equal" class="btn operator2">=</div>  
+      <div class="input-wrap">
+        <input type="text" v-model="calc" class="input-calc"
           v-on:keyup.96="append('0')"           
           v-on:keyup.97="append('1')" 
           v-on:keyup.98="append('2')" 
@@ -147,6 +145,7 @@ export default {
           v-on:keyup.enter="equal"           
           v-on:keyup.8="del"           
           placeholder="Numpad entry" />
+      </div>     
     </div>    
   </div>
 </template>

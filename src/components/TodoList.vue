@@ -2,7 +2,7 @@
 
 <template>
   <div class="todoList">    
-    <h1><span style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
+    <h1 spellcheck="false" contenteditable="true"><span style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 2px 2px 2px;">o</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 3px 3px 3px;">t</span><!--
     --><span style="text-shadow: rgb(17, 17, 17) 4px 4px 4px;">e</span><!--
@@ -21,16 +21,22 @@
       v-model="newTodoText"
       placeholder="Input a task or a note and press enter"
       @keydown.enter="addTodo"
-    />    
-    <tbody v-if="todos.length" is="transition-group" name="notes"> 
-        <TodoListItem
-          v-for="todo in todos"
-          :key="todo.id"
-          :todo="todo"
-          @remove="removeTodo"
-        />              
-    </tbody>    
-    <p v-else>Nothing to do, input a task or a note and press Enter</p>
+    />  
+    <div class="note-wrapper">          
+    <div class="darken">          
+      <table>
+      <tbody v-if="todos.length" is="transition-group" name="notes"> 
+          <TodoListItem
+            v-for="todo in todos"
+            :key="todo.id"
+            :todo="todo"
+            @remove="removeTodo"
+          />              
+      </tbody>   
+      <p v-else>Nothing to do, input a task or a note and press Enter</p>
+    </table>
+    </div>     
+    </div>     
   </div>
 </template>
 
