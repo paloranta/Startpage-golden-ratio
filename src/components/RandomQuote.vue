@@ -12,7 +12,7 @@
           <em :key="selectedAuthor">{{ selectedAuthor }}</em>
         </transition>
       </div>
-    <div style="text-align: center;padding: 1em;">
+    <div style="text-align: center;">
       <button class="button" @click="randomQuote();">New quote</button>
     </div>
   </div>
