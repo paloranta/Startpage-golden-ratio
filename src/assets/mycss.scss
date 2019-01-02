@@ -107,8 +107,10 @@ input[type="text"], textarea {
       "A D D C"
       "A D D C"
       "A D D C";*/
-    background-color: #30404d;
-    background-image: url(./assets/old-mathematics.png); /* Background pattern from Toptal Subtle Patterns */
+    background-color: #30404d;    
+    background-image: linear-gradient(#394B59 2px, transparent 2px), linear-gradient(90deg, #394B59 0px, transparent 1px), linear-gradient(rgba(255,255,255,.05) 0px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 0px, transparent 1px);
+    background-size: 200px 200px, 200px 200px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
     grid-template-areas: 
     "A B B B"
     "A E F C"
@@ -129,7 +131,8 @@ input[type="text"], textarea {
   .item {    
     font-size: 1vw;
     border-bottom: none;
-    border: 1px solid $black;
+    //border: 1px solid $black;
+    border: 1px solid white;
 
     &.a {
       align-items: baseline;
@@ -212,7 +215,7 @@ input[type="text"], textarea {
   border-radius: 3px;
   box-sizing: border-box;  
   background-size: 200% 200%;
-
+/*
   &:nth-of-type(4n) {
     background-position: 0% 0;
   }
@@ -225,7 +228,7 @@ input[type="text"], textarea {
   &:nth-of-type(4n + 4) {
     background-position: 0% 100%;
   }
-
+*/
   &.a {    
     grid-area: A;
     //background-color: $lightestgray;
