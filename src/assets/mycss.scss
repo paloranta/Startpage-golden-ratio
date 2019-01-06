@@ -51,6 +51,8 @@ tbody tr td:first-child {
   margin: 2em;
   border-left: 4px solid rgba(167,182,194,.5);
   padding: 0 20px;    
+  overflow: auto;
+  max-height: 19em;
 }
 
 .clock {  
