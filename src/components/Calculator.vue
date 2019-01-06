@@ -99,7 +99,7 @@ export default {
 
 <template>
   <div>    
-    <div class="calculator">
+    <div class="calculator grow">
       <div class="prev">{{ calculator.previous || '' }} {{ calculator.sign }}</div>
       <div class="display">{{ calculator.current || '0' }}</div>
       <div @click="percent" class="btn operator">%</div>

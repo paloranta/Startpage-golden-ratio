@@ -2,19 +2,21 @@
 
 <template>
   <div class="todoList">    
-    <h1 spellcheck="false" contenteditable="true"><span style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 2px 2px 2px;">o</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 3px 3px 3px;">t</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 4px 4px 4px;">e</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 5px 5px 5px;">s</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 6px 6px 6px;"> a</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 7px 7px 7px;">n</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 8px 8px 8px;">d</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 9px 9px 9px;"> t</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 10px 10px 10px;">a</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 11px 11px 11px;">s</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 12px 12px 12px;">k</span><!--
-    --><span style="text-shadow: rgb(17, 17, 17) 13px 13px 13px;">s</span>
+    <h1 spellcheck="false" contenteditable="true"><span class="grow" style="text-shadow: rgb(17, 17, 17) 1px 1px 1px;);">N</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 2px 2px 2px;">o</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 3px 3px 3px;">t</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 4px 4px 4px;">e</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 5px 5px 5px;">s</span><!--
+    --><span>&nbsp;</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 6px 6px 6px;">a</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 7px 7px 7px;">n</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 8px 8px 8px;">d</span><!--
+    --><span>&nbsp;</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 9px 9px 9px;"> t</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 10px 10px 10px;">a</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 11px 11px 11px;">s</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 12px 12px 12px;">k</span><!--
+    --><span class="grow" style="text-shadow: rgb(17, 17, 17) 13px 13px 13px;">s</span>
     </h1>
 
     <BaseInputText

@@ -361,3 +361,15 @@ tr.spaceUnder>td {
   padding: 1em;    
   backdrop-filter: blur(20px);
 }
+
+.grow {
+  transition: all .1s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.4); 
+}
+
+h1 span {  
+  display: inline-block;
+}

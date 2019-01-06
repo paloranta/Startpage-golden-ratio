@@ -1,6 +1,6 @@
 //https://codesandbox.io/s/wk0n26pko8 "Vue clock"
 <template>
-  <div class="clock">
+  <div class="clock grow">
     <h1 style="font-weight: 700;">
       <span style="text-shadow: rgb(17, 17, 17) 13px 13px 13px;font-weight: 700;">{{ hour[0] }}</span><!--
    --><span style="text-shadow: rgb(17, 17, 17) 12px 12px 12px;font-weight: 700;">{{ hour[1] }}</span><!--
