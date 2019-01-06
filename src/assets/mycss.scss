@@ -362,12 +362,16 @@ tr.spaceUnder>td {
   backdrop-filter: blur(20px);
 }
 
-.grow {
+.grow, .grow-little {
   transition: all .1s ease-in-out; 
 }
 
 .grow:hover { 
   transform: scale(1.4); 
+}
+
+.grow-little:hover { 
+  transform: scale(1.05); 
 }
 
 h1 span {  

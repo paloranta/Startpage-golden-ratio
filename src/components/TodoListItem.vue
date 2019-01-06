@@ -2,7 +2,7 @@
 
 <template>  
   <tr class="spaceUnder">  
-    <td>{{ todo.text }}<br /><em><small>Added: {{ todo.time }} {{ todo.date }}</small></em></td><td> <button class="button" @click="$emit('remove', todo.id);">X</button></td>
+    <td class="grow-little">{{ todo.text }}<br /><em><small>Added: {{ todo.time }} {{ todo.date }}</small></em></td><td> <button class="button" @click="$emit('remove', todo.id);">X</button></td>
   </tr>  
 </template>
 
