@@ -5,8 +5,8 @@
   --><span class="formula" style="right: 20%;top: 0;z-index: 2;">b</span>
   <div class="container">    
     <div class="item a"><TodoList /></div>    
-    <div class="item b"><RandomQuote /></div>    
-    <div class="item c"><Clock /></div>
+    <div class="item b grow-little"><RandomQuote /></div>    
+    <div class="item c grow-little"><Clock /></div>
     <div class="item d"><Calculator /></div>    
     <div class="item e"></div>    
     <div class="item f"></div>    
